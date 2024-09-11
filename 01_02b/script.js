@@ -12,7 +12,7 @@ const Card = (data) => {
   const imgData = data[0];
   const date = new Date(imgData.created_at);
 
-  const markup = `
+  const mark = `
     <figure class="image">
       <img
         srcset="
@@ -54,7 +54,7 @@ const Card = (data) => {
     </figure>
   `;
 
-  mainContent.innerHTML = markup;
+  mainContent.innerHTML = mark;
 };
 
 Card(data);
